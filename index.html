@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/equipo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estiloboton.css">
+    <link rel="shortcut icon" href="img/logo2.png" />
+    <title>Memorama del agua</title>
+</head>
+<body>
+    <div class="loguito">
+        <img class="logo" src="img/logo2.png">
+    </div>
+
+    <div class="titulo">
+        <div>
+          <h1></h1>
+          <h1>CENTRO DE INVESTIGACIÓN CIENTÍFICA DE YUCATÁN, A.C.</h1>
+          <h1>UNIDAD DE CIENCIA DEL AGUA</h1>
+        </div>
+      </div>
+
+    <div class="centrado1">
+        <h1>Memorama del agua</h1>
+        <div id="team-names">
+            <input type="text" id="team1" placeholder="Nombre del equipo 1">
+            <input type="text" id="team2" placeholder="Nombre del equipo 2">
+            <!-- <button onclick="addNames()">Agregar Nombres</button> -->
+                
+        </div>
+    </div>
+
+    <div class="centrado">
+        <div class="btn-bg Pokemon">
+            <div class="btn-group">
+                <div class="btn ball">
+                    <button class="btn-1" onclick="addNames()">
+                        <div class="pokemon-ball"></div><a>Memorama<span data-letters="Go!"></span><span data-letters="Go!"></span></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+
+    <script>
+        function addNames() {
+            var team1Name = document.getElementById("team1").value;
+            var team2Name = document.getElementById("team2").value;
+
+            console.log(team1Name)
+            if(team1Name == "" || team2Name == "" ){
+                console.log("faltan nombres")
+            }
+            else{
+                // Redireccionar a la página index.html con los nombres de los equipos
+                window.location.href = "juego.html?team1=" + encodeURIComponent(team1Name) + "&team2=" + encodeURIComponent(team2Name);
+            }
+
+        }
+    </script>
+
+
+
+</body>
+</html>

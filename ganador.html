@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama del Agua</title>
+    <link rel="stylesheet" href="./CSS/ganador.css">
+    <!-- <script src="./JS/confeti.js"></script>  -->
+</head>
+<body>
+    <div class="ganador">
+        <h1>Ganador</h1>
+        <!-- Mostrar el nombre del equipo aquí -->
+        <p>Equipo <span id="team1"></span></p>
+        <button id="boton" onclick="window.location.href='index.html'">Regresar</button>
+
+        <script type="module" src="./JS/confeti2.js"></script>
+        <button class="canvas-confetti-btn animate__animated">🎉</button>
+
+    </div>
+    
+    <script>
+        // Obtener la URL actual
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Obtener el valor del parámetro team1
+        const team1 = urlParams.get('team1');
+
+        // Mostrar el valor en el HTML
+        document.getElementById('team1').innerText = team1;
+    </script>
+    
+</body>
+</html>

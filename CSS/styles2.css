@@ -1,0 +1,299 @@
+body {
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+    font-family: sams-serif;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/fondog.jpg);
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-position: center; /* Para centrar la imagen */
+}
+
+
+
+
+main {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1,
+.section3 {
+
+    /* margin-top: 130px; */
+
+    border-image: linear-gradient(to bottom right, #AFEEEE 0%, #E0FFFF 25%, #B0E0E6 50%, #87CEFA 75%, #ADD8E6 100%);
+    background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%);
+    /* background: linear-gradient(160.65deg, rgba(255, 255, 255, 0) 0.74%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 102.03%); */
+
+    padding: 0 10px 10px 10px; 
+
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    padding: 10px;
+    border-radius: 8px;
+    /* margin-left: 80px;; */
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    
+}
+
+button {
+    height: 75px;
+    width: 75px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.estadisticas {
+    border: 1px solid white;
+    height: 80px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 95%;
+}
+
+/* Abre ventana cuando consigue el par de imágenes */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modal_container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-image: url(/img/fondog.jpg);
+    /* background: #3498DB; */
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: lem;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+
+
+.modal_title{
+    font-size: 1.8rem;
+    color: black;
+
+}
+
+.modal_paragraph{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: black;
+    
+    text-align: justify;
+
+}
+
+#modales {
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    /* padding: 100px -500px; */
+    background: rgb(255,255,255,0.2);
+    border: 3px solid #4ecccc;
+}
+
+.modal_close {
+    position: absolute; /* Cambiado de 'fixed' a 'absolute' para que el botón esté relativo al modal */
+    top: 10px; /* Ajusta la distancia desde la parte superior del modal */
+    right: 10px; /* Ajusta la distancia desde el borde derecho del modal */
+    text-decoration: none;
+    /* color: #fff; */
+    background-color: #4ecccc;
+    padding: 1em 1em;
+    border: 1px solid;
+    border-radius: 8px;
+    font-weight: 200;
+    transition: background-color .3s;
+}
+
+
+
+.modal_close:hover {
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+
+.restartbutton {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    position: fixed;
+    width: 160px;
+    height: 52px;
+   
+    border-radius: 10px;
+    /* background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%); */
+  
+}
+
+.Memory {
+    position: fixed;
+    width: 182px;
+    bottom: 194px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    color: #FFFFFF;
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+
+.reinicarpartidad {
+    position: fixed;
+    width: 182px;
+    bottom: 74px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    color: #FFFFFF;
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+.IniciarJuego {
+    position: fixed;
+    width: 182px;
+    bottom: 138px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.187px;
+    color: #FFFFFF;
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+
+
+
+
+
+.margen-superior {
+    margin-top: 50px; /* Ajusta el valor del margen según sea necesario */
+}
+
+.frame169{ /*Player 1 scoreboard*/
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+
+    padding: 20;
+    margin: 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 220px;
+    height: 234px;
+    left: 0px;
+    top: 10px;
+    border: 5px solid transparent;
+    /* border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%); */
+    border-image: linear-gradient(to bottom right, #AFEEEE 0%, #E0FFFF 25%, #B0E0E6 50%, #87CEFA 75%, #ADD8E6 100%);
+    border-image-slice: 1;
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%);
+    /* background: #b8e4ff; */
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.frame170{ /*Player 2 scoreboard*/
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+
+    padding: 20;
+    margin: 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 220px;
+    height: 234px;
+    right: 0px; /* Cambia de 'left' a 'right' para posicionar a la derecha */
+    top: 10px;
+    border: 5px solid transparent;
+    /* border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%); */
+    border-image: linear-gradient(to bottom right, #AFEEEE 0%, #E0FFFF 25%, #B0E0E6 50%, #87CEFA 75%, #ADD8E6 100%);
+    border-image-slice: 1;
+    background: linear-gradient(160.65deg, rgba(75, 183, 230, 0) 0.74%, rgba(75, 183, 230, 0.6) 50%, rgba(75, 183, 230, 0) 102.03%);
+    /* background: white; */
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.frame169 .modal-section {
+    /* Aquí puedes definir el tamaño de la letra para los elementos dentro de modal-section */
+    font-size: 30px; 
+}
+
+.frame170 .modal-section {
+    /* Aquí puedes definir el tamaño de la letra para los elementos dentro de modal-section */
+    font-size: 30px; /* Por ejemplo, el tamaño de la letra es de 16px */
+}
+
+
+
+
