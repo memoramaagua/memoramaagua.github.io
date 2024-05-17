@@ -28,8 +28,8 @@
     <div class="centrado1">
         <h1>Memorama del agua</h1>
         <div id="team-names">
-            <input type="text" id="team1" placeholder="Nombre del equipo 1">
-            <input type="text" id="team2" placeholder="Nombre del equipo 2">
+            <input type="text" id="team1" placeholder="Nombre del Equipo 1">
+            <input type="text" id="team2" placeholder="Nombre del Equipo 2">
             <!-- <button onclick="addNames()">Agregar Nombres</button> -->
                 
         </div>
@@ -55,6 +55,9 @@
         function addNames() {
             var team1Name = document.getElementById("team1").value;
             var team2Name = document.getElementById("team2").value;
+
+            team1Name = team1Name.toUpperCase();
+            team2Name = team2Name.toUpperCase();
 
             console.log(team1Name)
             if(team1Name == "" || team2Name == "" ){

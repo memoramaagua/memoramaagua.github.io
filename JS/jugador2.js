@@ -39,7 +39,7 @@ const team2 = urlParams1.get('team2');
 console.log('Equipo 2:', team2);
 
 let equipoElement2 = document.getElementById("team-name2");
-equipoElement2.textContent = `Equipo ${team2}`;
+equipoElement2.textContent = `EQUIPO ${team2}`;
 
 cargarDatosFetch()
 // caragr datos desde local

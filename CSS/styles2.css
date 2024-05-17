@@ -211,7 +211,7 @@ img {
 .IniciarJuego {
     position: fixed;
     width: 182px;
-    bottom: 138px; /* Ajusta la distancia desde el borde inferior */
+    bottom: 135px; /* Ajusta la distancia desde el borde inferior */
     right: 10px; /* Ajusta la distancia desde el borde derecho */
     font-family: Poppins;
     font-style: normal;

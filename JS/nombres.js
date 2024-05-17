@@ -12,6 +12,6 @@ function getParams() {
 // Función para agregar los nombres de los equipos en la página index.html
 function addTeamNames() {
     var params = getParams();
-    document.getElementById("team1").textContent = params.team1 || "Equipo 1";
-    document.getElementById("team2").textContent = params.team2 || "Equipo 2";
+    document.getElementById("team1").textContent = params.team1 || "EQUIPO 1";
+    document.getElementById("team2").textContent = params.team2 || "EQUIPO 2";
 }

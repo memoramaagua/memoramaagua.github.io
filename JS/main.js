@@ -41,7 +41,7 @@ const team1 = urlParams.get('team1');
 console.log('Equipo 1:', team1);
 
 let equipoElement = document.getElementById("team-name1");
-equipoElement.textContent = `Equipo ${team1}`;
+equipoElement.textContent = `EQUIPO ${team1}`;
 
 // Declara los arrays fuera de la función para que sean globales
 // const titulos = [];
